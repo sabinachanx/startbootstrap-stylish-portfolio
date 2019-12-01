@@ -22,6 +22,9 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+
+
 </head>
 
 <body id="page-top">
@@ -36,16 +39,38 @@
         <a class="js-scroll-trigger" href="#page-top">10!</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">Um..</a>
+        <a class="js-scroll-trigger" href="#about">um..</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Art</a>
+        <a class="js-scroll-trigger" href="#portfolio">aesthetics</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Call</a>
+        <a class="js-scroll-trigger" href="#contact">reach</a>
       </li>
     </ul>
   </nav>
+
+  <style>
+   
+    .intro-video {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      display: block;
+    }
+
+    .intro-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slider img {
+      max-width: 100%;
+    }
+  </style>
 
   <!-- Header -->
   <header class="masthead d-flex">
@@ -77,20 +102,18 @@
   <!-- Portfolio -->
   <section class="content-section" id="portfolio">
     <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Film</h3>
-        <h2 class="mb-5">I take pictures sometimes</h2>
+      <div class="container text-center">
+        <h2 class="mb-4">I take pictures sometimes</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                <h2>clouds</h2>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            <img class="img-fluid" src="img/slider/clouds.jpg" alt="">
           </a>
         </div>
         <div class="col-lg-6">
@@ -98,10 +121,15 @@
             <span class="caption">
               <span class="caption-content">
                 <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                <p class="mb-0"></p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+
+            <div class= "slick.slider">
+            <div><img class="img-fluid" src="img/slider/scene.jpg" alt="" ></div>
+            <div><img class="img-fluid" src="img/slider/scene2.jpg" alt="" ></div>
+          </div>
+
           </a>
         </div>
         <div class="col-lg-6">
@@ -133,9 +161,12 @@
   <!-- Call to Action -->
   <section class="content-section bg-primary text-white">
     <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      <h2 class="mb-4">I shoot videos, too</h2>
+      <div class="intro-video">
+          <iframe width="100%" src="https://www.youtube.com/embed/pwvexhMZ6Ts" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
     </div>
   </section>
 
@@ -176,6 +207,24 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slider').slick({
+        autoplay: true,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-buttons slick-prev"><span>Previous</span></button>',
+        nextArrow: '<button type="button" class="slick-buttons slick-next"><span>Next</span></button>',
+        customPaging: function (slick, index) {
+          return '<button><span>' + (index + 1) + '</span></button>';
+        }
+      });
+    });
+  </script>
+
 
 </body>
 

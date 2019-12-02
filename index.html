@@ -3,6 +3,8 @@
 
 <head>
 
+  <link href="css/lightbox.min.css" rel="stylesheet">
+
   <!-- COMMON TAGS -->
   <meta charset="utf-8">
   <title>// 10 //</title>
@@ -12,8 +14,7 @@
   <!-- Schema.org for Google -->
   <meta itemprop="name" content="// 10 //">
   <meta itemprop="description" content="lost in a world that does not exist...">
-  <meta itemprop="image"
-    content="https://sabinachanx.github.io/startbootstrap-stylish-portfolio/img/10.jpg">
+  <meta itemprop="image" content="https://sabinachanx.github.io/startbootstrap-stylish-portfolio/img/10.jpg">
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta name="og:title" content="// 10 //">
   <meta name="og:description" content="lost in a world that does not exist...">
@@ -61,6 +62,9 @@
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#portfolio">aesthetics</a>
       </li>
+      <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#video">motion</a>
+        </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#contact">reach</a>
       </li>
@@ -142,7 +146,7 @@
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+          <a class="portfolio-item" href="img/slider/clouds.jpg" data-lightbox="clouds">
             <span class="caption">
               <span class="caption-content">
                 <h2>clouds</h2>
@@ -153,41 +157,57 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>view</h2>
-                <p class="mb-0"></p>
+          <a class="portfolio-item" href="img/slider/scene2.jpg" data-lightbox="view">
+          <a class="portfolio-item" href="img/slider/scene.jpg" data-lightbox="view">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>view</h2>
+                  <p class="mb-0">everyone has two eyes but no one  has the same views</p>
+                </span>
               </span>
-            </span>
 
-            <div class="slider">
-              <div><img class="img-fluid" src="img/slider/scene.jpg" alt=""></div>
-              <div><img class="img-fluid" src="img/slider/scene2.jpg" alt=""></div>
-            </div>
+              <div class="slider">
+                <div><img class="img-fluid" src="img/slider/scene.jpg" alt=""></div>
+                <div><img class="img-fluid" src="img/slider/scene2.jpg" alt=""></div>
+              </div>
 
-          </a>
+            </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>taiwan</h2>
-                <p class="mb-0">do you like things old-fashioned? i do</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/slider/tw.jpg" alt="">
-          </a>
+          <a class="portfolio-item" href="img/slider/tw2.jpg" data-lightbox="taiwan">
+          <a class="portfolio-item" href="img/slider/tw3.jpg" data-lightbox="taiwan">
+          <a class="portfolio-item" href="img/slider/tw4.jpg" data-lightbox="taiwan">
+          <a class="portfolio-item" href="img/slider/tw.jpg" data-lightbox="taiwan">
+
+                  <span class="caption">
+                    <span class="caption-content">
+                      <h2>taiwan</h2>
+                      <p class="mb-0">do you like things old-fashioned? i do</p>
+                    </span>
+                  </span>
+                  <div class="slider">
+                    <div><img class="img-fluid" src="img/slider/tw.jpg" alt=""></div>
+                    <div><img class="img-fluid" src="img/slider/tw2.jpg" alt=""></div>
+                    <div><img class="img-fluid" src="img/slider/tw3.jpg" alt=""></div>
+                    <div><img class="img-fluid" src="img/slider/tw4.jpg" alt=""></div>
+                  </div>
+                </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="img/slider/uk3.jpg" data-lightbox="duck">
+            <a class="portfolio-item" href="img/slider/uk.jpg" data-lightbox="duck">
+            <a class="portfolio-item" href="img/slider/uk2.jpg" data-lightbox="duck">
             <span class="caption">
               <span class="caption-content">
                 <h2>ducks</h2>
                 <p class="mb-0">quack</p>
               </span>
             </span>
+            <div class="slider">
             <img class="img-fluid" src="img/slider/uk2.jpg" alt="">
+            <img class="img-fluid" src="img/slider/uk3.jpg" alt="">
+            <img class="img-fluid" src="img/slider/uk.jpg" alt="">
+          </div>
           </a>
         </div>
       </div>
@@ -195,7 +215,7 @@
   </section>
 
   <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
+  <section class="content-section bg-primary text-white" id="video">
     <div class="container text-center">
       <h2 class="mb-4">I shoot videos, too</h2>
       <div class="intro-video">
@@ -221,7 +241,7 @@
   <footer class="footer text-center">
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSebeaiyGMwOubRVubs-rTiKktR_itu0BQ4Rb5XbirLvorelAg/viewform?embedded=true"
-      width="640" height="531" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      width="100%" height="531" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     <style>
       .footer.footer {
         background-color: #1d809f;
@@ -332,7 +352,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
-
+  <script src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
@@ -352,6 +372,14 @@
       });
 
     });
+  </script>
+
+  <script>
+    lightbox.option({
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true,
+      'showImageNumberLabel':false 
+    })
   </script>
 
 
